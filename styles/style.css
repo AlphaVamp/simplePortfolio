@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Satisfy&display=swap');
+:root{
+    --heading: #c6e377;
+    --text: #729d39;
+    --hr: #36622b;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbfad3;
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+hr{
+    width: 50%;
+    border-width: 10px;
+    color: var(--hr);
+    border-style: dotted;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    padding: 100px 20vw;
+}
+
+section h1{
+    color: green;
+    font-size: 40px;
+    font-family: 'Satisfy', sans-serif;
+}
+
+section.myself{
+    text-decoration: none;
+}
+
+section.aboutMe{
+    font-size: large;
+}
+
+div.skillSets{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    padding: 15px;
+    height: 180px;
+}
+
+.contactForm{
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contactFormDetails{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    padding: 10px;
+    margin: 16px 0;
+    /* text-align: center; */
+    border: 2px solid var(--hr);
+    border-radius: 20px;
+    outline: 0;
+    background-color: #fcfbe5;
+    color: var(--text);
+}
+
+textarea{
+    width: 100%;
+}
+
+.contactFormBtn{
+    padding: 10px;
+    color: var(--text);
+    background-color: #fcfbe5;
+    border: 2px solid var(--hr);
+    border-radius: 20px;
+    /* height: 50px; */
+    width: 50%;
+    cursor: pointer;
+}
+
+.contactFormBtn:hover{
+    background-color: var(--heading);
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+::placeholder{
+    color: var(--hr);
+    opacity: 0.5;
+}
