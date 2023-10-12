@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Satisfy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Satisfy&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Kalam:wght@300;400;700&display=swap');
 :root{
-    --heading: #c6e377;
-    --text: #729d39;
-    --hr: #36622b;
+    --heading: #66fcf1;
+    --text: #45a29e;
+    --hr: #627adc;
 }
 
 *, *:before, *:after{
@@ -11,17 +12,17 @@
 
 body{
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fbfad3;
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #1f2833;
     color: var(--text);
     overflow-x: hidden;
 }
 
 hr{
-    width: 50%;
-    border-width: 10px;
+    width: 60%;
+    border-width: 5px;
     color: var(--hr);
-    border-style: dotted;
+    border-style: dashed;
 }
 
 section{
@@ -34,24 +35,19 @@ section{
 }
 
 section h1{
-    color: green;
-    font-size: 40px;
-    font-family: 'Satisfy', sans-serif;
+    color: var(--heading);
+    font-size: 50px;
+    font-family: 'Kalam', sans-serif;
+}
+
+section p{
+    font-size: 25px;
+    margin: 60px;
 }
 
 section.myself{
     text-decoration: none;
 }
-
-/* div.conns{
-    font-family: 'Satisfy';
-
-} */
-/* div a{
-    display: flex;
-    width: 100%;
-    height: 50%;
-} */
 
 section.aboutMe{
     font-size: large;
@@ -65,6 +61,12 @@ div.skillSets{
 }
 
 .logo{
+    padding: 15px;
+    height: 180px;
+    border-radius: 120px;
+}
+
+#mailLogo{
     padding: 15px;
     height: 180px;
 }
@@ -105,11 +107,12 @@ textarea{
     border-radius: 20px;
     /* height: 50px; */
     width: 50%;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .contactFormBtn:hover{
-    background-color: var(--heading);
+    background-color: #36622b;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
 }
 
